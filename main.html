@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- <title>Responsive Navbar | CodingNepal</title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/24ffc22a37.js" crossorigin="anonymous"></script>
+    
+    <!-- leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    
+    <!-- leaflet JavaScript-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="  crossorigin=""></script>
+
+    <!--https://leafletjs.com/examples/quick-start/example.html -- https://geoawesomeness.com/javascript-for-geospatial-applications-an-overview/ -->
+    <!--https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/-->
+    
+    <title>Inicio</title>
+  </head>
+      <body>
+        <nav id="hamnav">
+            <!-- [THE HAMBURGER] -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+           
+            <!-- [MENU ITEMS] -->
+            <div id="hamitems">
+              <a href="index.html">Início</a>
+              <a href="projetos.html">Projetos</a>
+              <a href="publicações.html">Publicações</a>
+              <a href="contato.html">Contato</a>
+            </div>
+          </nav>
+          
+          <div id="wrapper">            
+            <div id="div1"> <!--topbar-->
+              <img src="images/eu3.png" id="foto" aly="foto"/>
+            </div>  
+            
+            <div id="div2">
+                <h1>Thiago C. L. Silveira</h1>
+                <h3>Ecologia Aquática - Modelos Espaciais - Invertebrados - Peixes - Mapas</h3>
+                <h3>Doutor em Zoologia</h3>
+            </div>
+
+            <div id="div3">
+              <p>
+                <a href="mailto: silveira.tcl@gmail.com" alt="contato e-mail">
+                  <i class="fa fa-envelope-square" aria-hidden="true"> </i></a>
+                
+                <a href="https://www.researchgate.net/profile/Thiago-Cesar-Silveira" alt="Research Gate" target="blank">
+                  <i class="fab fa-researchgate" aria-hidden="true"> </i></a>
+                
+                <a href="https://orcid.org/0000-0002-3163-479X" alt="Orcid" target="blank">
+                  <i class="fab fa-orcid "></i></a>
+                
+                <a href="https://github.com/silveiratcl" alt="github" target="blank">
+                  <i class="fab fa-github-square"></i></a>
+
+                <a href="https://twitter.com/silveiratcl" alt="twitter" target="blank">
+                  <i class="fab fa-twitter-square"></i></a>  
+              
+              </p>
+
+              <!-- logos lattes research gate github-->
+            </div>
+            
+            <div id="div4"> <!-- paragrafo abaixo-->
+              <p>Possuo graduação em Ciências Biológicas, Mestrado em Biologia Animal (UFRGS) e Doutorado em Zoologia (PUCRS - Doutorado Sanduíche/Gales-UK). Atualmente sou pesquisador associado do Laboratório de Ecologia de Ambientes Recifais <a href="https://labarufsc.weebly.com/" style="text-decoration: none; color:#075e91;">(LABAR)/UFSC</a>.
+               Tenho experiência na área de ecologia aquática com ênfase em invertebrados, peixes, modelos espaciais e de nicho. Tenho experiência na produção de trabalhos técnicos envolvendo inventários de fauna aquática marinha e análise de bancos de dados. Minha experiência de ensino é em nível de pós-graduação, variando entre estatística aplicada à ecologia, bancos de dados e práticas ecológicas.</p>
+           
+           
+           
+              </div>
+            <div id="mapid"> 
+              
+            </div>
+            <script>
+              var mymap = L.map('mapid').setView([-27.59009163908177, -48.53946673585415], 6); 
+              
+              L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+              attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+              maxZoom: 18,
+              id: 'mapbox/streets-v11',
+              tileSize: 512,
+              zoomOffset: -1,
+              accessToken: 'pk.eyJ1Ijoic2lsdmVpcmF0Y2wiLCJhIjoiY2tsazZoMmh6Mm93azJ3bWxkNGRlazBicyJ9.-N09aUz6DDDCzAacfYkUPQ'
+              }).addTo(mymap);
+              
+              var marker = L.marker([-27.59009163908177, -48.53946673585415]).addTo(mymap);
+              marker.bindPopup("<b>Ciências Biológicas</b><br>2004").openPopup();
+
+              
+
+             
+            </script>  
+
+          </div>
+    
+      </body>
+</html>
+
