@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <!-- modulo 6 aula 22-->
+    
+    <meta property="og:url" content="https://www.tsilveira.eco.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thiago C. Lima Silveira" />
+    <meta property="og:description" content="Biólogo, tenho Mestrado em Biologia Animal (UFRGS) e Doutorado em Zoologia (PUCRS)..." />
+    <meta property="og:image" content="../assets/images/preview_image" /> <!-- 1200 - 630 -->
+  
+    <!-- modulo 6 aula 22-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .querySelector(".menu_mobile")
+          .addEventListener("click", function () {
+            if (
+              document.querySelector(".menu nav ul").style.display == "flex"
+            ) {
+              document.querySelector(".menu nav ul").style.display = "none";
+            } else {
+              document.querySelector(".menu nav ul").style.display = "flex";
+            }
+          });
+      };
+    </script>
+
+    <!-- leaflet CSS-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- leaflet JavaScript-->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <!--https://leafletjs.com/examples/quick-start/example.html -- https://geoawesomeness.com/javascript-for-geospatial-applications-an-overview/ -->
+    <!--https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/-->
+
+    <title>Thiago Silveira</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"> <img src="assets/images/logo2.png" alt="" /> </a>
+        </div>
+
+        <div class="menu">
+          <nav>
+            <div class="menu_mobile">
+              <div class="mm_line"></div>
+              <div class="mm_line"></div>
+              <div class="mm_line"></div>
+            </div>
+            <ul>
+              <li class="active"><a href="index.html">HOME</a></li>
+              <li><a href="publica.html">PUBLICAÇÕES</a></li>
+              <li><a href="mailto:silveira.tcl@gmail.com">CONTATO</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+      <div class="container column">
+        <div class="banner_headline">
+          <h1>Thiago Silveira</h1>
+          <h2>Dr. em Zoologia</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="geral_profile">
+      <div class="widget_profile">
+        <div class="widget_body flex">
+          <article class="profile">
+            
+              <div class="profile_thumbnail">
+                <img src="assets/images/eu3.png" alt="" />
+              </div>
+              <div class="profile_title">Thiago Cesar L. Silveira</div>
+              <div class="profile_degree">
+                Doutor em Zoologia | Pesquisador Associado (LABAR- UFSC)
+              </div>
+              <div class="profile_icons">
+                <div class="child">
+                  <a href="mailto:silveira.tcl@gmail.com">
+                    <img src="assets/images/mail.svg" alt="" />
+                  </a>
+                </div>
+
+                <div class="child">
+                  <a
+                    href="http://lattes.cnpq.br/5960267776845701"
+                    target="external"
+                  >
+                    <img src="assets/images/lattes.svg" alt="" />
+                  </a>
+                </div>
+
+                <div class="child">
+                  <a
+                    href="https://www.researchgate.net/profile/Thiago-Cesar-Silveira"
+                    target="external"
+                  >
+                    <img src="assets/images/researchgate.svg" alt="" />
+                  </a>
+                </div>
+
+                <div class="child">
+                  <a
+                    href="https://orcid.org/0000-0002-3163-479X"
+                    target="external"
+                  >
+                    <img src="assets/images/orcid.svg" alt="" />
+                  </a>
+                </div>
+
+                <div class="child">
+                  <a href="https://github.com/silveiratcl" target="external">
+                    <img src="assets/images/github.svg" alt="" />
+                  </a>
+                </div>
+
+                <div class="child">
+                  <a href="https://twitter.com/silveiratcl" target="external">
+                    <img src="assets/images/twitter.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="geral">
+      <div class="container">
+        <section>
+          <div class="widget">
+            <div class="widget_body flex">
+              <article>
+                <div class="news_thumbnail">
+                  <img src="assets/images/merda.png" alt="" />
+                </div>
+                <div class="news_title">Sobre mim</div>
+                <div class="widget_title_bar"></div>
+                <div class="news_resume">
+                  Biólogo, tenho Mestrado em Biologia Animal (UFRGS) e Doutorado
+                  em Zoologia (PUCRS). Atualmente sou pesquisador associado ao
+                  <a href="https://labarufsc.weebly.com/miacutedia.html" target="_blank" >Laboratório de Ecologia de Ambientes Recifais (LABAR–UFSC)</a>.
+                  Me interesso por ecologia aquática e venho explorando
+                  diferentes aspectos envolvendo organismos aquáticos de riachos
+                  a ambientes marinhos. Venho trabalhando com modelos de
+                  distribuição de espécies aquáticas e gosto muito de abordagens
+                  envolvendo tecnologias ligadas a Sistemas de Informação Geográfica (SIG).
+                  Os projetos de pesquisa que venho desenvolvendo e colaborando,
+                  apresentam uma forte relação com análises e apresentação de
+                  dados especializados. Uso o ambiente R em rotinas de análises
+                  e aulas. Pai do Pedro desde novembro de 2017.
+                </div>
+              </article>
+
+              <article>
+                <div class="news_thumbnail">
+                  <img src="assets/images/dr.jpg" alt="" />
+                </div>
+                <div class="news_title">Interesses P&D</div>
+                <div class="widget_title_bar"></div>
+                <div class="news_resume">
+                  Meus interesses em pesquisa compreendem: modelagem
+                  de nicho, modelagem espacial, modelagem de dispersão, ecologia
+                  de populações, invasões biológicas, relações
+                  espécie-ambiente e espacialização de bancos de dados. 
+                  Atualmente venho colaborando com a Profa. Dra. Bárbara Segal (LABAR-UFSC)
+                  no projeto "Subsídios para o plano de controle da invasão do coral-sol
+                  (Tubastraea coccinea Lesson, 1829) na Reserva Biológica Marinha do Arvoredo: modelagem 
+                  espacial e estrutura da comunidade nativa".
+
+                </div>
+              </article>
+
+              <article>
+                <div class="news_thumbnail">
+                  <img src="assets/images/dr.jpg" alt="" />
+                </div>
+                <div class="news_title">Outros interesses</div>
+                <div class="widget_title_bar"></div>
+                <div class="news_list">
+                  <ul>
+                    <li>
+                      Tenho estudado linguagens como: HTML5, CSS3, Javascript,
+                      React, React Native e Python. Tenho me interessado em
+                      aprender novas tecnologias que possam ser aplicadas 
+                      em projetos de conservação e divulgação científica.
+                    </li>
+                    <li>
+                      Bancos de dados, curadoria e visualização em interfaces web.
+                    </li>
+                    <li>
+                      Uma das muitas coisas fascinantes que a biologia me deu
+                      foi a oportunidade de me habilitar como mergulhador. Ainda sou um aprendiz e espero cada 
+                      vez mais poder aliar os trabalhos realizo com atividades de mergulho. 
+                    </li>
+                    <li>
+                      Nos momentos de lazer me dedico a família e sempre que
+                      possível a atividades ao ar livre. Surfe, skate e praia
+                      com família são minhas preferidas.
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="map_article">
+                <div class="news_title">Minha Caminhada</div>
+                <div class="widget_title_bar"></div>
+                <div class="widget_title_bar_map"></div>
+                <div class="news_resume">
+                  Neste mapa espacializo os principais eventos em minha caminhada quanto a formação, pesquisa e experiência profissional. 
+      
+                <div id="map_container"></div>
+                <script>
+                  var mymap = L.map("map_container").setView(
+                    [17, -14.0],
+                    3
+                  );
+
+                  L.tileLayer(
+                    "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+                    {
+                      attribution:
+                        'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox </a> | <a href="https://fontawesome.com/">Fontawesome</a> | Icons',
+                      maxZoom: 18,
+                      id: "mapbox/streets-v11",
+                      tileSize: 512,
+                      zoomOffset: -1,
+                      accessToken:
+                        "pk.eyJ1Ijoic2lsdmVpcmF0Y2wiLCJhIjoiY2tsazZoMmh6Mm93azJ3bWxkNGRlazBicyJ9.-N09aUz6DDDCzAacfYkUPQ",
+                    }
+                  ).addTo(mymap);
+
+                  var acad_icon = L.icon ({
+                    iconUrl:'../assets/images/marker-edu.png',
+                    
+                    iconSize: [34,45],
+                    iconAnchor:   [17, 44],
+                  });
+
+                  var work_icon = L.icon ({
+                    iconUrl:'../assets/images/marker-work.png',
+                    
+                    iconSize: [34,45],
+                    iconAnchor:   [17, 44],
+                  });
+
+                  var rd_icon = L.icon ({
+                    iconUrl:'../assets/images/marker-r&d.png',
+                    
+                    iconSize: [34,45],
+                    iconAnchor:   [17, 44],
+                  });
+        
+                  var marker = L.marker([-30.0594, -51.1745], {icon: acad_icon}).addTo(mymap);
+                  marker
+                    .bindPopup(
+                      "<b>1. Ciências Biológicas - PUCRS</b><br>1999-2004"
+                    )
+                    .openPopup();
+
+                  var marker = L.marker([40.7337, -74.1882],{icon: acad_icon}).addTo(mymap);
+                  marker
+                    .bindPopup(
+                      "<b>2. Newark - New Jersey </b><br>2001-2001"
+                    )
+                    .openPopup();  
+
+                  var marker = L.marker([-30.0783, -51.1202],{icon: acad_icon}).addTo(mymap);
+                  marker
+                    .bindPopup(
+                      "<b>3. Mestrado Biologia Animal- UFRGS</b><br>2004-2007"
+                    )
+                    .openPopup();
+
+                    var marker = L.marker([-30.0616, -51.1745],{icon: acad_icon}).addTo(mymap);
+                  marker
+                    .bindPopup(
+                      "<b>4. Doutorado Zoologia- PUCRS</b><br>2011-2015 "
+                    )
+                    .openPopup();  
+
+                  var marker = L.marker([53.2259, -4.1607],{icon: acad_icon}).addTo(mymap);
+                  marker
+                    .bindPopup(
+                      "<b>5. Doutorado Sanduiche - Bangor - School of Ocean Sciences - Walles </b><br>2014-2014"
+                    )
+                    .openPopup();
+                  
+                  var marker = L.marker([51.4086, -0.6860],{icon: acad_icon}).addTo(mymap);
+                  marker
+                    .bindPopup(
+                      "<b>6. PhD Course Species Distribution - Imperial College - England </b><br>2014-2014"
+                    )
+                    .openPopup();
+
+
+                  var marker = L.marker([-12.6934, -38.6179],{icon: work_icon}).addTo(mymap);
+                  marker
+                    .bindPopup("<b>7. Petrobrás/NSFBioensaios </b><br>2016-2017")
+                    .openPopup();
+                  
+
+                  var marker = L.marker([-27.5997, -48.5163], {icon: rd_icon}).addTo(mymap);
+                  marker
+                    .bindPopup(
+                      "<b>10. Posdoc PNPD - PPG Ecologia  </b><br>2017-2021 </br>"
+                    )
+                    .openPopup();
+
+                  var marker = L.marker([-23.54, -46.63], {icon: work_icon}).addTo(mymap);
+                  marker
+                    .bindPopup(
+                      "<b>11. Golder Associates  </b><br>2021-2021"
+                    )
+                    .openPopup();
+                  
+                    var marker = L.marker([-27.5997, -48.5156], {icon: rd_icon}).addTo(mymap);
+                  marker
+                    .bindPopup(
+                      "<b>12. Posdoc - Pesquisador Associado </br> LABAR - UFSC </b><br>2021-atual"
+                    )
+                    .openPopup(); 
+
+                </script>
+
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container flexcolumn">
+        <div class="footer_area"></div>
+        <div class="footer_copy">Copyrigth - Todos os direitos reservados</div>
+      </div>
+    </footer>
+  </body>
+</html>
