@@ -556,3 +556,73 @@ footer .widget_title_text {
     width: 350px;
   }
 }
+
+@media only screen and (orientation: landscape) {
+  
+  .banner_headline h1 {
+    font-size: 40px;
+    padding: 10px;
+    padding-bottom: 1px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .banner_headline h2 {
+    font-size: 17px;
+    padding: 10px;
+    padding-top: 1px;
+  }
+  .banner_options {
+    height: auto;
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  #geral section,
+  #geral aside {
+    padding: 20px;
+  }
+  .footer_menu {
+    flex-direction: column;
+  }
+
+  .footer_area {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .footer_copy {
+    padding-left: 15px;
+  }
+  header .container {
+    flex-direction: row;
+  }
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .menu_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space_around;
+    margin: 10px;
+  }
+
+  #map_container {
+    width: 600px;
+  }
+
+
+}
