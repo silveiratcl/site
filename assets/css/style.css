@@ -557,7 +557,7 @@ footer .widget_title_text {
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media   (min-width: 610px) and (max-width: 812px ) {
   
   .banner_headline h1 {
     font-size: 40px;
@@ -620,9 +620,15 @@ footer .widget_title_text {
     margin: 10px;
   }
 
-  #map_container {
-    width: 600px;
+  article .map_article {
+    position: absolute;
   }
+
+  #map_container {
+    width: 100%;
+  }
+
+
 
 
 }
