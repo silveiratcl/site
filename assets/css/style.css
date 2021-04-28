@@ -53,9 +53,9 @@ nav a:hover {
   display: flex;
   justify-content: center;
   background-image: url("../images/header2.png");
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
-  height: 400px;
+  height: 100vh;
 }
 
 .logo img:hover {
@@ -434,15 +434,6 @@ footer {
   flex: 1;
 }
 
-.fm_1 {
-  background-color: #39aae1;
-}
-.fm_2 {
-  background-color: #0079c7;
-}
-.fm_3 {
-  background-color: #2b4c99;
-}
 
 .footer_menu a {
   display: block;
