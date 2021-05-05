@@ -58,7 +58,8 @@ nav .active a {
   background-image: url("../images/header2.png");
   background-position: bottom;
   background-size: cover;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 75px);
+  border-bottom: 3px solid #39aae1;
 }
 
 .logo img:hover {
