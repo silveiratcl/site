@@ -55,7 +55,7 @@ nav .active a {
 #banner {
   display: flex;
   justify-content: center;
-  background-image: url("../images/header2.png");
+  background-image: url("../images/header3.png");
   background-position: bottom;
   background-size: cover;
   height: calc(100vh - 75px);
@@ -173,6 +173,10 @@ article {
   flex: 1;
   min-width: 300px;
   margin-right: 20px;
+}
+
+.news_resume {
+line-height: 2.8;
 }
 
 .news_resune a {
