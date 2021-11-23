@@ -170,12 +170,14 @@ nav .active a {
 .flex {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 article {
   flex: 1;
   min-width: 300px;
   margin-right: 20px;
+
 }
 
 .news_resume {
