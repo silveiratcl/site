@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
  
     <meta charset="UTF-8" />
-    <meta property="og:url" content="https://www.tsilveira.eco.br/" />
+    <meta property="og:url" content="https://silveiratcl.github.io/site/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Thiago C. Lima Silveira" />
     <meta property="og:description" content="Personal Website" />
@@ -13,6 +13,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap" rel="stylesheet"> 
+    
+    <script src="https://kit.fontawesome.com/24ffc22a37.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -51,8 +53,12 @@
       crossorigin=""
     ></script>
 
-    
-    <script src='assets/js/Leaflet.Sleep.js'></script> <!-- leaflet sleep-->
+    <!-- leaflet sleep-->
+    <script src='assets/js/Leaflet.Sleep.js'></script> 
+
+    <!-- language switch-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- https://stackoverflow.com/questions/53021813/html-two-language-option-with-button-without-having-to-redirect-to-different-pa?noredirect=1&lq=1 -->
 
     <title>Thiago Silveira</title>
   </head>
@@ -72,20 +78,40 @@
             </div>
             <ul>
               <li class="active"><a href="index.html">HOME</a></li>
-              <li><a href="#about">SOBRE MIM</a></li>
-              <li><a href="#publi">PUBLICAÇÕES</a></li>
-              <li><a href="mailto:silveira.tcl@gmail.com">CONTATO</a></li>
-              <li><a href="">ENG/PT</a></li>
-            </ul>
-          </nav>
-        </div>
+              <li><a href="#about" lang="pt">SOBRE MIM</a></li>
+              <li><a href="#about" lang="en">ABOUT ME</a></li>
+            
+              <li><a href="#publi" lang="pt">PUBLICAÇÕES</a></li>
+              <li><a href="#publi" lang="en">PUBLICATIONS</a></li>
+
+              <li><a href="mailto:silveira.tcl@gmail.com" lang="pt">CONTATO</a></li>
+              <li><a href="mailto:silveira.tcl@gmail.com" lang="en">CONTACT</a></li>
+              <li>
+                  <div >
+                  <a><form >
+                      <label for="lang-switch">
+                        <span><i class="fas fa-language fa-2x"></i></span>
+                      </label>
+                      <select id="lang-switch">
+                        <option value="en">English</option>
+                        <option value="pt" selected>Português</option> 
+                      </select>
+                    </form>
+                  </a>
+                </div>
+              </li>
+          </ul>
+        </nav>
       </div>
+     </div>
+
     </header>
     <section id="banner">
       <div class="container column">
         <div class="banner_headline">
-          <h1>Thiago Silveira</h1>
-          <h2>Dr. em Zoologia</h2>
+          <h1 >Thiago Silveira</h1>
+          <h2 lang="pt">Dr. em Zoologia</h2>
+          <h2 lang="en">PhD. Zoology</h2>
         </div>
       </div>
     </section>
@@ -99,9 +125,13 @@
                 <img src="assets/images/eu4.png" alt="" />
               </div>
               <div class="profile_title">Thiago Cesar L. Silveira</div>
-              <div class="profile_degree">
+              <div class="profile_degree" lang="pt">
                 Doutor em Zoologia | Pesquisador Associado (LABAR- UFSC)
               </div>
+              <div class="profile_degree" lang="en">
+                PhD in Zoology | Associate Researcher (LABAR- UFSC)
+              </div>
+              
               <div class="profile_icons">
                 <div class="child">
                   <a href="mailto:silveira.tcl@gmail.com">
@@ -174,9 +204,10 @@
                   <img src="assets/images/" alt="" />
                 </div>
                 
-                <div class="news_title">Sobre mim</div>
+                <div class="news_title" lang="pt">Sobre mim</div>
+                <div class="news_title" lang="en">About me</div>
                 <div class="widget_title_bar"></div>
-                <div class="news_resume">
+                <div class="news_resume" lang="pt">
                   Biólogo, tenho Mestrado em Biologia Animal (UFRGS) e Doutorado
                   em Zoologia (PUCRS). Atualmente sou pesquisador associado ao
                   <a href="https://labarufsc.weebly.com/" target="_blank" >Laboratório de Ecologia de Ambientes Recifais (LABAR–UFSC)</a> e 
@@ -191,15 +222,29 @@
                   dados especializados. Uso o ambiente R em rotinas de análises
                   e aulas. Pai do Pedro desde novembro de 2017.
                 </div>
+                <div class="news_resume" lang="en">
+                  Biologist, I have a Masters in Animal Biology (UFRGS) and a Ph.D.
+                   in Zoology (PUCRS). I am currentlly associated researcher at
+                  <a href="https://labarufsc.weebly.com/" target="_blank" >Reef Ecology Lab (LABAR–UFSC)</a> 
+                  I'm interested in aquatic ecology and I've been exploring
+                  different aspects involving aquatic organisms in streams
+                  to marine environments. I've been working with models of
+                  distribution of aquatic species and I really like approaches
+                  involving technologies linked to Geographic Information Systems (GIS).
+                  The research projects I've been developing and collaborating with,
+                  have a strong relationship with analysis and presentation of
+                  specialized data. Pedro's father since November 2017. 
+                </div>
               </article>
 
               <article>
                 <div class="news_thumbnail">
                   <img src="assets/images/dr.jpg" alt="" />
                 </div>
-                <div class="news_title">Interesses P&D</div>
+                <div class="news_title" lang="pt">Interesses P&D</div>
+                <div class="news_title" lang="en">R&D</div>
                 <div class="widget_title_bar"></div>
-                <div class="news_resume">
+                <div class="news_resume" lang="pt">
                   Meus interesses em pesquisa compreendem: modelagem
                   de nicho, modelagem espacial, modelagem de dispersão, ecologia
                   de populações, invasões biológicas, relações
@@ -208,7 +253,16 @@
                   no projeto "Subsídios para o plano de controle da invasão do coral-sol
                   (Tubastraea coccinea Lesson, 1829) na Reserva Biológica Marinha do Arvoredo: modelagem 
                   espacial e estrutura da comunidade nativa".
-
+                </div>
+                <div class="news_resume" lang="en">
+                  My research interests include: modeling
+                  niche, spatial modeling, dispersion modeling, ecology
+                  of populations, biological invasions, relationships
+                  species-environment.
+                  Currently I have been collaborating with Profa. Dr. Bárbara Segal (LABAR-UFSC)
+                  in the project "Subsidies for the control plan of the invasion of the sun coral
+                  (Tubastraea coccinea Lesson, 1829) at the Arvoredo Marine Biological Reserve: modeling
+                  space and structure of the native community". 
                 </div>
               </article>
 
@@ -216,9 +270,10 @@
                 <div class="news_thumbnail">
                   <img src="assets/images/dr.jpg" alt="" />
                 </div>
-                <div class="news_title">Outros interesses</div>
+                <div class="news_title" lang="pt">Outros interesses</div>
+                <div class="news_title" lang="en">Other interests</div>
                 <div class="widget_title_bar"></div>
-                <div class="news_list">
+                <div class="news_list" lang="pt">
                   <ul>
                     <li>
                       Estou estudando linguagens como: HTML5, CSS3, Javascript,
@@ -242,15 +297,44 @@
                     </li>
                   </ul>
                 </div>
+                
+                <div class="news_list" lang="en">
+                  <ul>
+                    <li>
+                      I'm studying languages like: HTML5, CSS3, Javascript,
+                       and Python. I have been interested in
+                       learn new technologies that can be applied
+                       in conservation projects, data visualization and scientific dissemination. 
+                    </li>
+                    <li>
+                      Database development and curation. Also, I´ve
+                      interest in database spatialization in web interfaces. 
+                    </li>
+                    <li>
+                      One of the many fascinating things that biology has given me
+                      it was the opportunity to qualify as a diver. I'm still an apprentice and I'm waiting for each
+                      increasingly able to combine the work I do with diving activities. 
+                    </li>
+                    <li>
+                      In moments of leisure, I dedicate myself to the family and whenever
+                      possible to outdoor activities. Surf, skate and beach
+                      with family are my favorites. 
+                    </li>
+                  </ul>
+                </div>
+
+
+
               </article>
 
               <article class="map_article">
-                <div class="news_title">Minha Caminhada</div>
+                <div class="news_title" lang="pt">Minha Caminhada</div>
+                <div class="news_title" lang="en">My journey</div>
                 <div class="widget_title_bar"></div>
                 <div class="widget_title_bar_map"></div>
-                <div class="news_resume">
-                  Neste mapa espacializo os principais eventos em minha caminhada quanto a formação, pesquisa e experiência profissional. 
-      
+                <div class="news_resume" >
+
+                
                 <div id="map_container"></div>
                 <script>
                   var mymap = L.map("map_container").setView(
@@ -296,7 +380,7 @@
                   var marker = L.marker([-30.0594, -51.1745], {icon: acad_icon}).addTo(mymap);
                   marker
                     .bindPopup(
-                      "<b>1. Ciências Biológicas - PUCRS</b><br>1999-2004"
+                      "<b>1. Biological Sciences - PUCRS</b><br>1999-2004"
                     )
                     .openPopup();
 
@@ -310,21 +394,21 @@
                   var marker = L.marker([-30.0783, -51.1202],{icon: acad_icon}).addTo(mymap);
                   marker
                     .bindPopup(
-                      "<b>3. Mestrado Biologia Animal- UFRGS</b><br>2004-2007"
+                      "<b>3. Msc Animal Biology- UFRGS</b><br>2004-2007"
                     )
                     .openPopup();
 
                     var marker = L.marker([-30.0616, -51.1745],{icon: acad_icon}).addTo(mymap);
                   marker
                     .bindPopup(
-                      "<b>4. Doutorado Zoologia- PUCRS</b><br>2011-2015 "
+                      "<b>4. PhD Zoology- PUCRS</b><br>2011-2015 "
                     )
                     .openPopup();  
 
                   var marker = L.marker([53.2259, -4.1607],{icon: acad_icon}).addTo(mymap);
                   marker
                     .bindPopup(
-                      "<b>5. Doutorado Sanduiche - Bangor - School of Ocean Sciences - Walles </b><br>2014-2014"
+                      "<b>5. Sandwich PhD - Bangor - School of Ocean Sciences - Walles </b><br>2014-2014"
                     )
                     .openPopup();
                   
@@ -359,7 +443,7 @@
                     var marker = L.marker([-27.5997, -48.5156], {icon: rd_icon}).addTo(mymap);
                   marker
                     .bindPopup(
-                      "<b>12. Pesquisador Associado-LABAR/UFSC </br> Pós-doc PELD-ILOC </b><br>2021-atual"
+                      "<b>12. Associate Researcher - LABAR/UFSC </br> Pós-doc PELD-ILOC </b><br>2021-atual"
                     )
                     .openPopup(); 
 
@@ -369,7 +453,8 @@
               <div class="widget">
                 <div class="widget_title">
                   <p id="publi"></p>
-                  <div class="widget_title_text">Publicações recentes</div>
+                  <div class="widget_title_text" lang="pt">Publicações recentes</div>
+                  <div class="widget_title_text" lang="en">Latest Publications</div>
                   <div class="widget_title_bar"></div>
                 </div>
                 <div class="widget_body flex">
@@ -384,7 +469,7 @@
                       target="blank"
                     >
                       <div class="news_data">
-                        <div class="news_posted_at">08 - 2021</div>
+                        <div class="news_posted_at">2021 - 08</div>
                       </div>
                       <div class="pub_thumbnail">
                         <img src="assets/images/pub_thumbs/tagliari_2021.png" alt="" />
@@ -410,7 +495,7 @@
                       target="blank"
                     >
                       <div class="news_data">
-                        <div class="news_posted_at">03 - 2021</div>
+                        <div class="news_posted_at">2021 - 03</div>
                       </div>
                       <div class="pub_thumbnail">
                         <img src="assets/images/pub_thumbs/fontoura_2021.png" alt="" />
@@ -437,7 +522,7 @@
                       target="blank"
                     >
                       <div class="news_data">
-                        <div class="news_posted_at">04 - 2020</div>
+                        <div class="news_posted_at">2020 - 04</div>
                       </div>
                       <div class="pub_thumbnail">
                         <img src="assets/images/pub_thumbs/crive_2020.png" alt="" />
@@ -465,7 +550,7 @@
                       target="blank"
                     >
                       <div class="news_data">
-                        <div class="news_posted_at">08 - 2020</div>
+                        <div class="news_posted_at">2020 - 08</div>
                       </div>
                       <div class="pub_thumbnail">
                         <img
@@ -494,7 +579,7 @@
                       target="blank"
                     >
                       <div class="news_data">
-                        <div class="news_posted_at">05 - 2020</div>
+                        <div class="news_posted_at">2020 - 05</div>
                       </div>
                       <div class="pub_thumbnail">
                         <img src="assets/images/pub_thumbs/lopes_2019.png" alt="" />
@@ -521,7 +606,7 @@
                       target="blank"
                     >
                       <div class="news_data">
-                        <div class="news_posted_at">05 - 2020</div>
+                        <div class="news_posted_at">2020 - 05</div>
                       </div>
                       <div class="pub_thumbnail">
                         <img
@@ -553,7 +638,7 @@
                       target="blank"
                     >
                       <div class="news_data">
-                        <div class="news_posted_at">02 - 2019</div>
+                        <div class="news_posted_at">2019 - 02</div>
                       </div>
                       <div class="pub_thumbnail">
                         <img src="assets/images/pub_thumbs/font_2019.png" alt="" />
@@ -580,7 +665,7 @@
                       target="blank"
                     >
                       <div class="news_data">
-                        <div class="news_posted_at">10 - 2018</div>
+                        <div class="news_posted_at">2018 - 10</div>
                       </div>
                       <div class="pub_thumbnail">
                         <img
@@ -611,7 +696,7 @@
                       target="blank"
                     >
                       <div class="news_data">
-                        <div class="news_posted_at">08 - 2018</div>
+                        <div class="news_posted_at">2018 - 08</div>
                       </div>
                       <div class="pub_thumbnail">
                         <img
@@ -682,4 +767,6 @@
       </div>
     </footer>
   </body>
+<!--language switch-->
+<script src="assets/js/idiom.js" type="text/javascript"></script>
 </html>

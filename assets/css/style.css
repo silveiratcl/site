@@ -28,6 +28,21 @@ header {
   align-items: center;
 }
 
+/* FOR ENGLISH BUTTON */
+
+i  {
+  position: relative;
+  top: 7px;
+} 
+
+form {
+  position: relative;
+  bottom: 15px; 
+}
+
+/* rip off the hover effect*/
+
+
 nav ul,
 nav li {
   list-style: none;
