@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    aria-hidden="true"
    focusable="false"
    data-prefix="fab"
@@ -19,7 +12,14 @@
    sodipodi:docname="cv.svg"
    width="464"
    height="512"
-   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -28,7 +28,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -43,18 +42,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="991"
+     inkscape:window-width="3200"
+     inkscape:window-height="1261"
      id="namedview6"
      showgrid="false"
      inkscape:zoom="1.1201227"
-     inkscape:cx="392.03189"
-     inkscape:cy="277.69808"
+     inkscape:cx="392.36773"
+     inkscape:cy="278.09453"
      inkscape:window-x="2391"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4"
-     inkscape:document-rotation="0" />
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="0" />
   <path
      fill="currentColor"
      d="m 12.070935,65.911743 c 0,0 -1.560258,359.210737 -1.456241,368.874197 4.330517,33.2816 33.38517,43.77049 45.763218,44.08222 l 356.986998,-0.13721 c 25.40465,-2.3057 41.64791,-22.08234 44.9555,-42.7636 0.25385,-1.58718 -0.27073,-291.22216 0.2893,-361.714667 C 456.28711,54.490742 442.93968,36.658837 420.07055,32.166174 404.74383,29.862252 186.82427,31.327292 53.049322,31.32728 46.086586,31.230763 20.912398,37.579503 12.070935,65.911743 Z"
@@ -77,5 +77,5 @@
        id="tspan839"
        x="149.86661"
        y="337.04312"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Semi-Bold';fill:#ffffff;stroke-width:3.43062">cv</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke-width:3.43062">cv</tspan></text>
 </svg>
