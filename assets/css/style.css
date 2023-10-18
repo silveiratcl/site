@@ -538,12 +538,13 @@ footer .widget_title_text {
   }
 }
 
-@media   (min-width: 610px) and (max-width: 812px ) {
+@media   (min-width: 50px) and (max-width: 812px ) {
 
   .banner_headline h1 {
     font-size: 40px;
     padding: 10px;
     padding-bottom: 1px;
+    margin-top: 100px;
   }
 
   .logo {
