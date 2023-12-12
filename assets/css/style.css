@@ -77,7 +77,7 @@ nav .active a {
 #banner {
   display: flex;
   justify-content: center;
-  background-image: url("../images/header3.png");
+  background-image: url("../images/header4_100dpi.png");
   background-position: bottom;
   background-size: cover;
   height: calc(100vh - 75px);
