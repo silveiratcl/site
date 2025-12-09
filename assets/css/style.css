@@ -200,6 +200,12 @@ article {
 
 }
 
+/* Profile article takes full width available */
+article.profile {
+  max-width: none;
+  flex: 1;
+}
+
 .news_resume {
 line-height: 2.8;
 }
