@@ -17,6 +17,11 @@
     <meta property="place:location:latitude" content="-27.5997"/>
     <meta property="place:location:longitude" content="-48.5156"/>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Preload critical banner image in WebP format -->
+    <link rel="preload" as="image" href="assets/images/header4_100dpi.webp" type="image/webp">
+    <link rel="preload" as="image" href="assets/images/header4_100dpi.png">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap" rel="stylesheet">
 
@@ -121,6 +126,11 @@
     </header>
 
     <section id="banner">
+      <!-- WebP with PNG fallback for better performance -->
+      <picture class="banner-bg">
+        <source srcset="assets/images/header4_100dpi.webp" type="image/webp">
+        <img src="assets/images/header4_100dpi.png" alt="" aria-hidden="true" style="display:none;">
+      </picture>
       <div class="container column">
         <div class="banner_headline">
           <h1 >Thiago Silveira</h1>
